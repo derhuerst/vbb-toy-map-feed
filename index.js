@@ -1,11 +1,15 @@
 'use strict'
 
-const monitor = require('vbb-monitor')
+const websocket = require('ws')
+const feed = require('./feed')
 
-const stations = require('./stations')
-console.info(stations.length, 'stations')
-const interval = 60 * 1000
-
-monitor(stations, interval)
-.on('data', console.log)
+feed
+.on('data', (departure) => {
+	const data = JSON.stringify(departure)
+	for (let client of server.clients) {
+		if (client.readyState === websocket.OPEN) client.send(data)
+	}
+})
 .on('error', console.error)
+
+const server = websocket.createServer({port: 8080}, () => {})

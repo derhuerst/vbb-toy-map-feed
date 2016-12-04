@@ -13,7 +13,7 @@ const buffers = {} // by station + line
 const bufferOf = (id) => {
 	if (buffers[id]) return buffers[id]
 	buffers[id] = ttlBuffer({
-		ttl: 60 * 1000,
+		ttl: 3 * 60 * 1000,
 		initialValue: {sum: 0, entries: 0},
 		in: ({sum, entries}, delay) => ({sum: sum + delay, entries: entries + 1}),
 		out: ({sum, entries}, delay) => ({sum: sum - delay, entries: entries - 1})

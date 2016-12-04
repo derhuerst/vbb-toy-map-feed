@@ -11,5 +11,10 @@
 	"repository": "derhuerst/vbb-toy-map-feed",
 	"bugs": "https://github.com/derhuerst/vbb-toy-map-feed/issues",
 	"license": "ISC",
-	"engines": {"node": ">=6"}
+	"engines": {"node": ">=6"},
+	"dependencies": {
+		"vbb-monitor": "derhuerst/vbb-monitor",
+		"vbb-stations": "^2.1",
+		"vbb-lines-at": "^1.2"
+	}
 }

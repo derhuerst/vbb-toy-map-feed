@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "vbb-toy-map-feed",
-  "description": "A live feed for the BVG toy map.",
+  "name": "vbb-delay-map-feed",
+  "description": "A live feed for the BVG delays map.",
   "version": "0.1.0",
   "main": "index.js",
   "files": [
@@ -14,9 +14,9 @@
     "generate"
   ],
   "author": "Jannis R <mail@jannisr.de>",
-  "homepage": "http://derhuerst.github.io/vbb-toy-map-feed/",
-  "repository": "derhuerst/vbb-toy-map-feed",
-  "bugs": "https://github.com/derhuerst/vbb-toy-map-feed/issues",
+  "homepage": "http://derhuerst.github.io/vbb-delay-map-feed/",
+  "repository": "derhuerst/vbb-delay-map-feed",
+  "bugs": "https://github.com/derhuerst/vbb-delay-map-feed/issues",
   "license": "ISC",
   "engines": {
     "node": ">=6"

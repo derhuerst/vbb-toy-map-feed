@@ -1,0 +1,12 @@
+#!/bin/sh
+
+rsync -rav --delete \
+	--exclude '.*' \
+	--exclude node_modules \
+	. 'root@vbb-delay-map-feed.jannisr.de:~/bvg-toy-map-feed/'
+
+ssh 'root@vbb-delay-map-feed.jannisr.de' "\
+cd ~/bvg-toy-map-feed
+npm i --production
+forever stop bvg-toy-map-feed
+forever start -a --uid bvg-toy-map-feed index.js"

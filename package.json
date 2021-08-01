@@ -24,7 +24,7 @@
   "dependencies": {
     "vbb-stations": "^2.1",
     "vbb-lines-at": "^1.2",
-    "vbb-monitor": "^0.2",
+    "vbb-monitor": "^0.3.0",
     "ttl-buffer": "^0.3",
     "map-stream": "^0.0.6",
     "ws": "^1.1.1"

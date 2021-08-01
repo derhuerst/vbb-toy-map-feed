@@ -26,7 +26,7 @@
     "vbb-lines-at": "^1.2",
     "vbb-monitor": "^0.2",
     "ttl-buffer": "^0.3",
-    "map-stream": "^0.0.6",
+    "map-stream": "^0.1.0",
     "ws": "^1.1.1"
   }
 }
